@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Les classes utilitaires : la propriété display</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- si on veut que le para s'adapte à son contenue , on use pa pp inline -->
+    <div class="container">
+      <p class="bg-primary text-white p-2 d-lg-none">
+        Un premier paragraphe affichage smart phone
+      </p>
+      <!-- <p class="bg-danger text-white p-2 d-inline">Un deuxième paragraphe grand écran</p> -->
+      <p class="bg-danger text-white p-2 d-none d-md-block">
+        Un deuxième paragraphe grand écran
+      </p>
+      <!-- par à la ligne -->
+      <hr />
+      <!-- on peut utiliser les points de rupture pour gerer l'afficharge des elts selon les tailles de l'écran -->
+      <a class="bg-warning p-2 d-none" href="#">Lien</a>
+    </div>
+  </body>
+</html>
